@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background:
+      linear-gradient(rgba(56, 189, 248, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(129, 140, 248, 0.08) 1px, transparent 1px),
+      #09090b;
+    background-size: 48px 48px;
+    color: #e5e7eb;
+    font-family: 'Segoe UI', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+  }
+
+  #app {
+    min-height: 100vh;
+  }
+}
