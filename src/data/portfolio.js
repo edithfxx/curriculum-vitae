@@ -195,4 +195,34 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript", "Vue 3", "localStorage", "ARIA"],
     link: "https://edithfxx.github.io/personal-portfolio/collect/index.html",
   },
+  {
+    id: 7,
+    title: "金門水產試驗所網站改版 Prototype",
+    category: "網站改版 / 官方形象網站",
+    role: "前端介面設計、資訊架構整理與多頁流程實作",
+    featured: true,
+    summary: "以金門水產試驗所為對象的官方網站改版 prototype，整合機構介紹、海洋教育、活動資訊、最新消息與特色商城等核心服務。",
+    description:
+      "本專案以建立官方可信任形象為目標，使用 Vue 3、Vue Router、Pinia 與 Tailwind CSS 建置網站 prototype，規劃首頁分流與多頁內容架構，串接認識水試所、海洋教育、參觀與活動、最新消息與特色商城等主要任務流程，並加入中英文雙語切換與前端假資料展示，模擬正式上線前的資訊服務體驗。",
+    highlights: [
+      "以官方網站改版為題，重新整理首頁分流與整體資訊架構",
+      "建置關於我們、海洋教育、參觀活動、最新消息、商城與購物車等多頁面流程",
+      "使用 Vue Router 與 Pinia 管理頁面路由與前端狀態",
+      "導入 vue-i18n，支援 zh-TW / en-US 雙語切換與語系保存",
+      "整合商品、活動、消息與教育文章假資料，模擬完整內容展示情境",
+      "搭配 Tailwind CSS、Swiper 與 PixiJS 強化版面表現與互動視覺",
+    ],
+    tech: [
+      "Vue 3",
+      "Vue Router",
+      "Pinia",
+      "Vite",
+      "Tailwind CSS 4",
+      "vue-i18n",
+      "Swiper",
+      "PixiJS",
+      "JavaScript",
+    ],
+    link: "https://nchu-11503-kinmen-fishers.dev-hub.io/",
+  }
 ];
