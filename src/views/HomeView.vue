@@ -26,6 +26,14 @@ const featuredProjects = projects.filter((project) => project.featured);
               >
                 查看技能
               </RouterLink>
+              <!-- <a
+                :href="profile.resume"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex justify-center rounded-lg border border-white/10 bg-white/5 px-5 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+              >
+                查看履歷
+              </a> -->
             </div>
           </template>
         </ProfileCard>

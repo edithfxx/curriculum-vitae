@@ -6,6 +6,7 @@ export const profile = {
   title: "前端工程師 Frontend Developer",
   avatar: avatar,
   bio: "好的程式，不只解決今天的問題，\n而是能被未來工程師理解與維護",
+  resume: "https://pda.104.com.tw/profile/share",
 };
 
 // 技能資料
