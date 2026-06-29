@@ -2,19 +2,23 @@
 <html lang="">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>個人作品集</title>
   </head>
   <body>
     <div id="app"></div>
     <script>
-      // GitHub Pages 404 redirect support
+      // GitHub Pages 404 redirect support: 從 sessionStorage 取回原始路徑並用 history.replaceState 設回去
       (function() {
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect !== location.href) {
-          history.replace(redirect);
+        try {
+          var redirect = sessionStorage.getItem('redirect');
+          if (redirect) {
+            sessionStorage.removeItem('redirect');
+            history.replaceState(null, '', redirect);
+          }
+        } catch (e) {
+          // ignore
         }
       }());
     </script>

@@ -2,22 +2,22 @@
 <html lang="">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>個人作品集</title>
   </head>
   <body>
-    <div id="app"></div>
     <script>
-      // GitHub Pages 404 redirect
+      // GitHub Pages 404 redirect: 保存原始路徑，然後導回 site root
       (function() {
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect !== location.href) {
-          history.replace(redirect);
+        try {
+          var originalPath = location.pathname + location.search + location.hash;
+          sessionStorage.setItem('redirect', originalPath);
+          location.replace('./');
+        } catch (e) {
+          location.replace('./');
         }
       }());
     </script>
-    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
